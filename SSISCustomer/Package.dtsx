@@ -11,11 +11,91 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{20D027C9-F2DA-49DF-9576-F53F397560D5}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{04950B5D-33C8-432A-9432-E31F43BF733B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Conversion error file]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B1DC4A39-F3F4-4C33-BC00-0045DA0658AA}"
+      DTS:ObjectName="Conversion error file">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\sunil\Documents\Sapna_SQL_Practice\SSIS-SSAS-SSRS\CustomerInformationSystem\SSISCustomer\New Text Document.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{24446A54-D2C1-4A7B-B783-01A928A905F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{171CC9E2-4237-42C3-836B-4281856569C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{9318AD8F-4047-47DB-A85A-E5964295D7D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{901E3193-D7C3-471A-BC1C-CCF9236C3FD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UCustomerName"
+              DTS:DTSID="{BC1D1BAB-5E97-4DB5-B9B3-B2C959F2BF7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{61BE57A2-D864-4336-87CC-50425B22CBFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{080657C8-AE5E-4622-8845-61ABB312E47E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[CSV Connection]"
       DTS:CreationName="FLATFILE"
@@ -40,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerCode"
-              DTS:DTSID="{834334AD-0E6C-49FB-A715-0014EB9926BE}"
+              DTS:DTSID="{484A2D4E-1DC7-44FC-A0E8-333CC818B9C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerName"
-              DTS:DTSID="{B6E113AF-E22E-4598-AF35-38D3CECDD0D1}"
+              DTS:DTSID="{5C45DD15-5D94-4612-89DF-63A0C85730B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerAmount"
-              DTS:DTSID="{78FD8104-6525-462E-848C-CFC07B05902B}"
+              DTS:DTSID="{F505BAC1-89FD-4F98-8A44-7639044145C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +147,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesDate"
-              DTS:DTSID="{F9EA6BF7-B8ED-4CD0-A9D2-7E15FE17B492}"
+              DTS:DTSID="{E3120A99-3AC9-4BD4-B8AA-ED311539084C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -83,7 +163,147 @@
           DTS:ConnectionString="Data Source=DESKTOP-U6IIN96\MSSQLSERVER2017;Initial Catalog=CustomerDataWareHouse;Integrated Security=True;Application Name=SSIS-Package-{EF2AFBE5-BECE-48FC-850A-A6D140CDEAB2}DESKTOP-U6IIN96\MSSQLSERVER2017.CustomerDataWareHouse;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorConnection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D1266AFE-A5C3-45F0-8FEF-DD1D63CE117A}"
+      DTS:ObjectName="ErrorConnection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\sunil\Documents\Sapna_SQL_Practice\SSIS-SSAS-SSRS\CustomerInformationSystem\SSISCustomer\Error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{2288B67F-462F-499F-B3C3-775DB2AB747F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{ADD14A6E-3260-4274-8647-E1A4BE884A49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{923B2EAE-0095-4CBD-B29F-9F2F497E43B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{FB246230-7D4C-4831-A31B-C4335A180F06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UCustomerName"
+              DTS:DTSID="{36259DCB-1B45-481E-9223-E2FA0F0CA2B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmountCY"
+              DTS:DTSID="{F1F0EE3C-7EC2-4789-9CF7-F3A9AB078293}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Read From CSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Read From CSV"
+      DTS:DTSID="{8E3C73EE-265D-4828-9711-BF9FF6295BA1}"
+      DTS:ObjectName="Read From CSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\sunil\Documents\Sapna_SQL_Practice\SSIS-SSAS-SSRS\customer.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{DC1E5A54-C8AE-4C25-A2D5-C83D746BD36F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{88565BA3-E192-4BB6-BE64-137D326711FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{570F2627-5800-481D-AA97-A58DCFB11529}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{6EFAF5FC-31D7-436C-9DA2-60A1727D32B1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{172B9B93-1374-4547-A145-999930CC7CFE}"
+      DTS:ObjectName="DataFlowTask_CapitalCaseDerivedColumnOutputUCustomerNameFriendlyExpression">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">UPPER(CustomerName)</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -95,6 +315,8 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task">
       <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="[Capital Case].[Derived Column Output].[UCustomerName].[FriendlyExpression]">@[$Package::DataFlowTask_CapitalCaseDerivedColumnOutputUCustomerNameFriendlyExpression]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -118,7 +340,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CustomerName"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -145,7 +367,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[UPPER](#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerName]})</property>
+                          name="Expression">[UPPER](#{Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -175,6 +397,302 @@
                       refId="Package\Data Flow Task\Capital Case.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\Capital Case.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[CustomerAmountCY]"
+                      cachedDataType="cy"
+                      cachedName="CustomerAmountCY"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output].Columns[CustomerAmountCY]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Error]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Error"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">((#{Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output].Columns[CustomerAmountCY]} &lt; 0) || (#{Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output].Columns[CustomerAmountCY]} == 0))</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">((CustomerAmountCY &lt; 0) || (CustomerAmountCY == 0))</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Conversion error rows"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Conversion error rows">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Conversion error rows.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conversion error file]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conversion error file]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[CustomerCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCode"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerCode]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[CustomerName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerName"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[UCustomerName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UCustomerName"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[UCustomerName]"
+                      lineageId="Package\Data Flow Task\Capital Case.Outputs[Derived Column Output].Columns[UCustomerName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SalesDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[UCustomerName]"
+                      dataType="wstr"
+                      length="50"
+                      name="UCustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Customer amount conv"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Customer amount conv"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Customer amount conv.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Customer amount conv.Inputs[Data Conversion Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\Customer amount conv.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output].Columns[CustomerAmountCY]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output].Columns[CustomerAmountCY]"
+                      name="CustomerAmountCY"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\Customer amount conv.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -232,13 +750,29 @@
                   name="ADO NET Destination Input">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].Columns[CustomerCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCode"
+                      externalMetadataColumnId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerCode]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerCode]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].Columns[CustomerName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerName"
+                      externalMetadataColumnId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerName]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                    <inputColumn
                       refId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].Columns[CustomerAmount]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CustomerAmount"
                       externalMetadataColumnId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerAmount]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].Columns[SalesDate]"
                       cachedCodepage="1252"
@@ -246,22 +780,7 @@
                       cachedLength="50"
                       cachedName="SalesDate"
                       externalMetadataColumnId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[SalesDate]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].Columns[CustomerCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="CustomerCode"
-                      externalMetadataColumnId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerCode]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerCode]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].Columns[UCustomerName]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="UCustomerName"
-                      externalMetadataColumnId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerName]"
-                      lineageId="Package\Data Flow Task\Capital Case.Outputs[Derived Column Output].Columns[UCustomerName]" />
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[SalesDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -314,12 +833,132 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Data Flow Task\Error Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Error Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Error Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorConnection]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorConnection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].Columns[CustomerCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCode"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerCode]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].Columns[CustomerName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerName"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].Columns[UCustomerName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UCustomerName"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[UCustomerName]"
+                      lineageId="Package\Data Flow Task\Capital Case.Outputs[Derived Column Output].Columns[UCustomerName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].Columns[CustomerAmountCY]"
+                      cachedDataType="cy"
+                      cachedName="CustomerAmountCY"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmountCY]"
+                      lineageId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output].Columns[CustomerAmountCY]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SalesDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[UCustomerName]"
+                      dataType="wstr"
+                      length="50"
+                      name="UCustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmountCY]"
+                      dataType="cy"
+                      name="CustomerAmountCY" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Read From CSV"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
-              name="Flat File Source"
+              name="Read From CSV"
               usesDispositions="true"
               version="1">
               <properties>
@@ -334,25 +973,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CSV Connection]"
-                  connectionManagerRefId="Package.ConnectionManagers[CSV Connection]"
+                  refId="Package\Data Flow Task\Read From CSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Read From CSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[Read From CSV]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerCode]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerCode]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerCode]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerCode]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerCode]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerCode]"
                       name="CustomerCode"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -367,14 +1006,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerName]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerName]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerName]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerName]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerName]"
                       name="CustomerName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -389,14 +1028,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerAmount]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerAmount]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerAmount]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerAmount]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]"
                       name="CustomerAmount"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -411,14 +1050,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[SalesDate]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].Columns[SalesDate]"
                       name="SalesDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -436,25 +1075,25 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerCode]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerCode]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CustomerCode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerName]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerName]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CustomerName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerAmount]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerAmount]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CustomerAmount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -462,27 +1101,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -493,15 +1132,35 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              refId="Package\Data Flow Task.Paths[Conditional Split Default Output]"
               endId="Package\Data Flow Task\Customers Data Warehouse.Inputs[ADO NET Destination Input]"
+              name="Conditional Split Default Output"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Default Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Error Output]"
+              endId="Package\Data Flow Task\Conversion error rows.Inputs[Flat File Destination Input]"
+              name="Data Conversion Error Output"
+              startId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Error Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Customer amount conv.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\Customer amount conv.Inputs[Data Conversion Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Capital Case.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Error]"
+              endId="Package\Data Flow Task\Error Destination.Inputs[Flat File Destination Input]"
+              name="Error"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Error]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
               endId="Package\Data Flow Task\Capital Case.Inputs[Derived Column Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\Read From CSV.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -530,62 +1189,28 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="205,42"
+          Size="210,42"
           Id="Package\Data Flow Task\Customers Data Warehouse"
-          TopLeft="302,219" />
+          TopLeft="86,295" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="90,42" />
+          Size="152,42"
+          Id="Package\Data Flow Task\Read From CSV"
+          TopLeft="129,42" />
         <NodeLayout
           Size="154,42"
           Id="Package\Data Flow Task\Capital Case"
-          TopLeft="253,119" />
+          TopLeft="41,142" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="165.5,84">
+          TopLeft="205,84">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="164.5,35"
+              EndConnector="-87,58"
               Start="0,0"
-              End="164.5,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5"
-                    Point2="0,17.5"
-                    Point3="4,17.5" />
-                  <mssgle:LineSegment
-                    End="160.5,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="160.5,17.5"
-                    Point2="164.5,17.5"
-                    Point3="164.5,21.5" />
-                  <mssgle:LineSegment
-                    End="164.5,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="330,161">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="74.5,58"
-              Start="0,0"
-              End="74.5,50.5">
+              End="-87,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -594,21 +1219,219 @@
                   <mssgle:CubicBezierSegment
                     Point1="0,25"
                     Point2="0,29"
-                    Point3="4,29" />
+                    Point3="-4,29" />
                   <mssgle:LineSegment
-                    End="70.5,29" />
+                    End="-83,29" />
                   <mssgle:CubicBezierSegment
-                    Point1="70.5,29"
-                    Point2="74.5,29"
-                    Point3="74.5,33" />
+                    Point1="-83,29"
+                    Point2="-87,29"
+                    Point3="-87,33" />
                   <mssgle:LineSegment
-                    End="74.5,50.5" />
+                    End="-87,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-58.97556640625,34,30.9511328125,9.6025390625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task\Conditional Split"
+          TopLeft="344,220" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Data Flow Task\Customer amount conv"
+          TopLeft="363,72" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="142.333333333333,142">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="269.666666666667,-28"
+              Start="0,0"
+              End="269.666666666667,-20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-11.8899545298231" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-11.8899545298231"
+                    Point2="0,-15.8899545298231"
+                    Point3="4,-15.8899545298231" />
+                  <mssgle:LineSegment
+                    End="265.666666666667,-15.8899545298231" />
+                  <mssgle:CubicBezierSegment
+                    Point1="265.666666666667,-15.8899545298231"
+                    Point2="269.666666666667,-15.8899545298231"
+                    Point3="269.666666666667,-19.8899545298231" />
+                  <mssgle:LineSegment
+                    End="269.666666666667,-20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="119.357766927083,-10.8899545298231,30.9511328125,9.6025390625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="457,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-35.5,106"
+              Start="0,0"
+              End="-35.5,98.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49"
+                    Point2="0,53"
+                    Point3="-4,53" />
+                  <mssgle:LineSegment
+                    End="-31.5,53" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.5,53"
+                    Point2="-35.5,53"
+                    Point3="-35.5,57" />
+                  <mssgle:LineSegment
+                    End="-35.5,98.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-33.16453125,58,30.8290625,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Conditional Split Default Output]"
+          TopLeft="397,262">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-206,33"
+              Start="0,0"
+              End="-206,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.40229885057471" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.40229885057471"
+                    Point2="0,13.4022988505747"
+                    Point3="-4,13.4022988505747" />
+                  <mssgle:LineSegment
+                    End="-202,13.4022988505747" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-202,13.4022988505747"
+                    Point2="-206,13.4022988505747"
+                    Point3="-206,17.4022988505747" />
+                  <mssgle:LineSegment
+                    End="-206,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-193.4992578125,18.4022988505747,180.998515625,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Data Flow Task\Error Destination"
+          TopLeft="416,317" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Error]"
+          TopLeft="446,262">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49.5,55"
+              Start="0,0"
+              End="49.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.3371647509579" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.3371647509579"
+                    Point2="0,22.3371647509579"
+                    Point3="4,22.3371647509579" />
+                  <mssgle:LineSegment
+                    End="45.5,22.3371647509579" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.5,22.3371647509579"
+                    Point2="49.5,22.3371647509579"
+                    Point3="49.5,26.3371647509579" />
+                  <mssgle:LineSegment
+                    End="49.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.68173828125001,27.3371647509579,62.8634765625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Data Flow Task\Conversion error rows"
+          TopLeft="569,148" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Error Output]"
+          TopLeft="502,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="158.5,34"
+              Start="0,0"
+              End="158.5,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.65034965034965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.65034965034965"
+                    Point2="0,11.6503496503496"
+                    Point3="4,11.6503496503496" />
+                  <mssgle:LineSegment
+                    End="154.5,11.6503496503496" />
+                  <mssgle:CubicBezierSegment
+                    Point1="154.5,11.6503496503496"
+                    Point2="158.5,11.6503496503496"
+                    Point3="158.5,15.6503496503496" />
+                  <mssgle:LineSegment
+                    End="158.5,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.72173828125,16.6503496503496,171.9434765625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
